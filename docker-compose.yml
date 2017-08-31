@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  sel_server:
+    image: selenium/standalone-chrome
+    ports:
+      - 4444:4444
+  simple_selenium:
+    image: simple
+    depends_on:
+      - sel_server
