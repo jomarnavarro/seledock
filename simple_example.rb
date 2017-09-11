@@ -21,6 +21,7 @@ def run
 end
 
 run do
+  # This is a random comment
   # Open the main page and check for the title
   @driver.get 'http://the-internet.herokuapp.com/'
   expect(@driver.title).to eql 'The Internet'
