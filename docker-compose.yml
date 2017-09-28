@@ -6,6 +6,6 @@ services:
     ports:
       - 4444:4444
   simple_selenium:
-    image: simple
+    image: omarnavarro/simple
     depends_on:
       - sel_server
